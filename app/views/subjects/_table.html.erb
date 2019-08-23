@@ -1,0 +1,16 @@
+<div id="table">
+	<% @subjects.each do |subject| %>
+		<div class="element-<%=subject.id%> <%= subject.faculty %>">
+			<%= link_to subject_path(subject.id) do %>
+		    <div class="cell">
+		      <div class="element">
+		        <div class="at_num"><%= subject.id %></div>
+		        <div class="at_cam"><%= subject.campus %></div>
+		        <div class="symbol"><%= subject.short %></div>
+		        <div class="at_details"><%= subject.title %></div>
+		      </div>
+		    </div>
+		  <%end %>
+		</div>
+	<% end %>
+</div>

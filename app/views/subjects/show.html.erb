@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<!-- Design inspired from https://www.hotjar.com/ -->
+<div class="jumbotron">
+  <div class="container text-center text-lg-left">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1 class="display-4"><%= @subject.title %> </h1><br>
+        <h2><span class="highlight-word"> <%= @subject.teacher %> </span></h2>
+        <p class="lead"><%= @subject.description %>.</p>
+        <ul>
+          <li>número de créditos: <%= @subject.credits %> cred.</li>
+          <li>Horario: <%= @subject.schedule %> H.</li>
+          <li>Sede: <%= @subject.campus %></li>
+        </ul>   
+      </div>
+      <div class="col-lg-4 align-items-center d-flex">
+        <p class="symbol_show" ><%= @subject.short %></p> 
+      </div>
+    </div>
+  </div>
+</div>
